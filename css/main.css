@@ -1,9 +1,28 @@
 html {
   font-family: "Fredoka One", cursive;
+}
+
+.banner {
+  border-top: 10px solid #b3fbff;
+  border-bottom: 10px solid #b3fbff;
   background: repeating-linear-gradient(
-    -45deg,
-    #b3fbff,
+    -30deg,
+    #c9fcff,
     #c9fcff 10px,
-    #d4fdff 10px
+    #d4fdff 10px,
+    #d4fdff 20px
     );
+}
+
+h1 {
+  color: #990073;
+}
+
+p {
+  color: #c09;
+}
+
+.btn {
+  color: #c09;
+  border-color: #990073;
 }
