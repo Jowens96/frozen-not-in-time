@@ -30,6 +30,10 @@ p {
   max-width: 19em;
 }
 
+img {
+  position: absolute;
+}
+
 .btn-ghost {
   color: #c09;
   border-color: #990073;
@@ -43,4 +47,34 @@ p {
   border-color: #990073;
 
   /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.30); */
+}
+
+.fifty {
+  width: 50px;
+}
+
+.hundred {
+ width: 120px;
+}
+
+.mint {
+
+}
+
+.cone {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.chocolate {
+
+}
+
+.vanilla {
+
+}
+
+.cherry {
+
 }
