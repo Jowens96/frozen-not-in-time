@@ -5,28 +5,26 @@ html {
 .banner {
   border-top: 10px solid #b3fbff;
   border-bottom: 10px solid #b3fbff;
-  background:
-    repeating-linear-gradient(
-      -30deg,
-      #c9fcff,
-      #c9fcff 10px,
-      #d4fdff 10px,
-      #d4fdff 20px
-    );
+  height: 500px;
+  background: repeating-linear-gradient(-30deg, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
+}
+
+.banner-text {
+  position: absolute;
+  top: .2em;
+  left: 2em;
+  opacity: 0;
+  animation: banner-text .4s .6s linear forwards;
 }
 
 h1 {
   color: #990073;
   transform: rotate(-10deg);
-
-  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.30); */
 }
 
 p {
   color: #c09;
   transform: rotate(-5deg);
-
-  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.30); */
   max-width: 19em;
 }
 
@@ -37,9 +35,6 @@ img {
 .btn-ghost {
   color: #c09;
   border-color: #990073;
-  transform: translate(20px,0px);
-
-  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.30); */
 }
 
 .btn-ghost:hover {
@@ -54,27 +49,75 @@ img {
 }
 
 .hundred {
- width: 120px;
+  width: 120px;
 }
 
 .mint {
-
+  position: absolute;
+  top: 190px;
+  right: 8em;
+  transform: translateY(-200em);
+  animation: icecream 1s linear forwards;
 }
 
 .cone {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 290px;
+  right: 7.5em;
+  transform: translateY(-200em);
+  animation: icecream 1s linear forwards;
 }
 
 .chocolate {
-
+  position: absolute;
+  top: 120px;
+  right: 7.5em;
+  transform: translateY(-200em);
+  animation: icecream 1s linear forwards;
 }
 
 .vanilla {
-
+  position: absolute;
+  top: 70px;
+  right: 7.5em;
+  transform: translateY(-200em);
+  animation: icecream 1s linear forwards;
 }
 
 .cherry {
+  position: absolute;
+  top: 30px;
+  right: 8.5em;
+  transform: translateY(-200em);
+  animation: icecream 1s linear forwards;
+}
+
+@keyframes banner-text {
+
+  0% {
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  40% {
+    opacity: 50;
+    filter: blur(5px);
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@keyframes icecream {
+
+  0% {
+    transform: translateY(-200em);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 
 }
